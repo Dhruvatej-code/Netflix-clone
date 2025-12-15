@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.main .black {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid white;
+}
+
+
+nav {
+    padding: 0.6rem 0rem;
+    max-width: 80vw;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav span {
+    padding: 0.6rem;
+    width: 122px;
+}
+
+.lan {
+    padding: 4px 13px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.sign {
+    background-color: red;
+    padding: 5px 13px;
+    color: white;
+    border-radius: 4px;
+}
+
+.sign:hover {
+    background-color: rgb(199, 34, 34);
+}
+
+.contain {
+    font-family: "Poppins", sans-serif;
+    height: 80%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.contain span {
+    color: white;
+}
+
+.contain span:nth-child(1) {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.contain span:nth-child(2) {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.contain span:nth-child(3) {
+    margin: 1.2rem 0.6rem;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contain span:nth-child(4) {
+    font-weight: 400;
+    font-size: x-small;
+    text-align: center;
+}
+
+.low input {
+    padding: 0.9rem 4rem;
+    margin: 0.9rem 0.3rem;
+    color: white;
+    background-color: black;
+    font-size: small;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+
+
+
+.get {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.get:hover {
+    background-color: rgb(199, 34, 34);
+}
+
+
+.container {
+    height: 60vh;
+    max-width: 80vw;
+    width: 100%;
+    margin-top: 1.9rem;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.7rem;
+    color: white;
+}
+
+.slide {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    height: 250px;
+
+
+}
+
+.slide::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 auto;
+    border: none;
+    border-radius: 8px;
+    overflow: visible;
+    padding: 15px 10px;
+    transition: transform 0.3s ease-out;
+
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.num {
+    position: absolute;
+    bottom: 10px;
+    left: -5px;
+    font-size: 100px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 2px white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.section {
+    height: 56vh;
+    max-width: 80vw;
+    width: 100%;
+    margin-left: 12vw;
+    margin-right: 12vw;
+
+}
+
+.slider {
+    display: flex;
+    gap: 7px;
+    height: 43vh;
+    justify-content: center;
+
+
+}
+
+.boxes {
+    height: 40vh;
+    width: 22vw;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 12px;
+    position: relative;
+
+}
+
+
+
+.boxes h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 23px 10px;
+}
+
+.boxes p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.boxes img {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+}
+
+.hero {
+    height: 78vh;
+    max-width: 80vw;
+    width: 100%;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.btns button {
+    height: 10vh;
+    width: 100%;
+    background-color: #322323;
+    color: white;
+    font-size: larger;
+    text-align: left;
+    padding: 0px 7px;
+
+}
+
+.btns button:hover {
+    background-color: #4b3939;
+}
+
+.small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.small p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+.ismal input {
+    width: 32vw;
+    height: 6vh;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 3px;
+
+}
+
+.ismal input:placeholder-shown {
+    padding: 0px 5px;
+}
+
+.footer {
+    height: 30vh;
+    max-width: 80vw;
+    width: 100%;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.help {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-bottom: 1.8rem;
+}
+
+.help a {
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.angular {
+    gap: 0.9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.angular a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+.hub {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.down button {
+    margin: 1rem;
+}
+
+.down h6 {
+    margin: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.down p {
+    margin-top: 1.9rem;
+    margin-bottom: 4rem;
+    margin-left: 1.1rem;
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+@media screen and (max-width:576px) {
+
+    nav button span {
+        display: none;
+    }
+
+    .main {
+        height: 60vh;
+    }
+
+    .container {
+        height: 32vh;
+        margin-left: 3vw;
+        max-width: 89vw;
+    }
+
+    .contain span:nth-child(4) {
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .slide {
+        display: flex;
+        gap: 5px;
+        height: 188px;
+    }
+
+    .section {
+        height: 107vh;
+        margin-left: 5vw;
+
+
+    }
+
+    .slider {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .boxes {
+        height: 23vh;
+        width: 90vw;
+        background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+
+    }
+
+    .btns {
+        gap: 10px;
+    }
+
+    .btns button {
+        height: 8vh;
+        width: 113%;
+    }
+
+    .hero {
+        margin-left: 5vw;
+        height: 65vh;
+    }
+
+    .small p {
+        font-weight: bolder;
+        padding-left: 17px;
+        padding-bottom: 25px;
+    }
+
+    .ismal input {
+        width: 69vw;
+        height: 5vh;
+        margin-left: 27px;
+        margin-bottom: 11px;
+    }
+
+    .ismal .get {
+        margin-left: 27px;
+        margin-bottom: 69px;
+    }
+
+    .help {
+        margin-left: -20px;
+        font-size: 17px;
+    }
+
+    .angular {
+        gap: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -14px;
+    }
+
+    .hub {
+        margin-top: 259px;
+    }
+
+    .down .lan {
+        margin-left: -7px;
+        font-size: larger;
+    }
+
+    .down h6 {
+        margin-left: 1px;
+        font-size: inherit;
+    }
+
+    .down p {
+        margin-left: -3px;
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+    .main {
+        height: 55vh;
+    }
+
+    .low input {
+        padding: 1.5rem 4rem;
+    }
+
+
+    .low .get {
+        padding: 17px 20px;
+    }
+
+    .container {
+        height: 36vh;
+        margin-left: 4vw;
+        max-width: 88vw;
+        margin-top: 5rem;
+        margin-bottom: -69px;
+    }
+
+    .slide {
+        height: 188px;
+    }
+
+
+    .section {
+        height: 86vh;
+        margin-left: 5vw;
+
+
+    }
+
+    .slider {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .boxes {
+        height: 18vh;
+        width: 90vw;
+        background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+
+    }
+
+    .btns {
+        gap: 10px;
+    }
+
+    .btns button {
+        height: 7vh;
+        width: 113%;
+    }
+
+    .hero {
+        margin-left: 5vw;
+        height: 60vh;
+    }
+
+
+    .small p {
+        font-weight: bolder;
+        padding-left: 17px;
+        padding-bottom: 7px;
+        font-size: medium;
+    }
+
+    .ismal input {
+        width: 70vw;
+    }
+
+    .ismal input:placeholder-shown {
+        padding: 0px 10px;
+    }
+
+    .ismal .get {
+        padding: 20px 26px;
+    }
+
+    .help {
+        margin-top: 41px;
+        margin-left: -20px;
+        font-size: 22px;
+    }
+
+    .angular {
+        gap: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: -14px;
+        margin-top: 50px;
+    }
+
+    .hub {
+        margin-top: 34px;
+        margin-left: 38px;
+    }
+
+    .down .lan {
+        margin-left: -7px;
+        font-size: larger;
+    }
+
+    .down h6 {
+        margin-left: 1px;
+        font-size: inherit;
+    }
+
+    .down p {
+        margin-left: -3px;
+        font-size: smaller;
+    }
+
+    .footer {
+        margin-left: 7vw;
+    }
+
+}
